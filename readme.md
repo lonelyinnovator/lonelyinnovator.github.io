@@ -1,2 +1,2 @@
 # MyBlog
-这是我的个人博客
+个人博客网址：https://lonelyinnovator.github.io/
