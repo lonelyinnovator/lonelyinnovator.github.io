@@ -41,9 +41,11 @@ tags:
 
 ```html
 <div>
-    <img src="在hexo中插入图片/image-20221020135409525.png" alt="post" style="width: 50%">
+	<img src="在hexo中插入图片/test.png" alt="post" style="width: 50%">
 </div>
 ```
+
+
 
 
 

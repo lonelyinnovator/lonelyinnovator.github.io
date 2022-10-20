@@ -18,6 +18,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://lonelyinnovator.github.io/
+root: /
 permalink: blog/:title/
 permalink_defaults:
 pretty_urls:
@@ -48,12 +49,12 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
-  wrap: true
-  hljs: false
+  # wrap: true
+  # hljs: false
 prismjs:
   enable: false
   preprocess: true
