@@ -21,7 +21,7 @@ tags:
 在_config.yml文件中设置post_asset_folder: true
 
 <div>
-    <img src="在hexo中插入图片/image-20221020135409525.png" alt="post" style="width: 50%">
+    <img src="在hexo中插入图片/image-20221020135409525.png" alt="post" style="width: 30%">
 </div>
 
 
