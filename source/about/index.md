@@ -8,3 +8,10 @@ date: 2022-10-20 21:26:18
 ## 关于我
 OO后，性别男，爱好女，xp④sp  =v=
 邮箱：lonelyinnovator `at` 163.com
+
+## 原神
+用了[genshin-card](https://toscode.gitee.com/xmdhs/genshin-card/tree/master)，[原版网站](https://genshin-card.getloli.com/) =v=
+<div>
+    <img src="https://files.xmdhs.com/genshin/svg/41/825541365" alt="genshin card" style="width: 170%">
+</div>
+
