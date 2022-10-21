@@ -5,8 +5,8 @@
 # Site
 title: Lo Blog
 subtitle: ''
-description: ''
-keywords:
+description: '=v='
+keywords: ''
 author: lorin
 language: zh-CN
 timezone: ''
@@ -107,4 +107,4 @@ deploy:
   type: git
   repo: https://github.com/lonelyinnovator/lonelyinnovator.github.io.git
   branch: deploy
-  message: "add genshin card"
+  message: "add copyright"
