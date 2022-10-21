@@ -107,4 +107,4 @@ deploy:
   type: git
   repo: https://github.com/lonelyinnovator/lonelyinnovator.github.io.git
   branch: deploy
-  message: "add copyright"
+  message: update about
