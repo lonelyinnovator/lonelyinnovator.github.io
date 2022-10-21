@@ -1,7 +1,9 @@
 ---
 title: 在hexo中插入图片
 date: 2022-10-20 13:38:19
-tags: 
+categories: hexo
+tags:
+urlname: insert-images-to-hexo-blog
 ---
 
 # Markdown方法
@@ -14,14 +16,14 @@ tags:
 
 在typora的偏好设置中，设置图片插入路径
 
-![image-20221020135201207](在hexo中插入图片/image-20221020135201207.png)
+![image-20221020135201207.png](https://s1.imagehub.cc/images/2022/10/21/image-20221020135201207.png)
 
 ## 2.修改_config.yml
 
 在_config.yml文件中设置post_asset_folder: true
 
 <div>
-    <img src="在hexo中插入图片/image-20221020135409525.png" alt="post" style="width: 30%">
+    <img src="https://s1.imagehub.cc/images/2022/10/21/image-20221020135409525.png" alt="post" style="width: 30%">
 </div>
 
 

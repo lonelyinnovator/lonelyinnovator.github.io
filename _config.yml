@@ -7,16 +7,16 @@ title: Lo Blog
 subtitle: ''
 description: '=v='
 keywords: ''
-author: lorin
+author: lonelyinnovator
 language: zh-CN
-timezone: ''
+timezone: 'Asia/ShangHai'
 
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://lonelyinnovator.github.io/
 root: /
-permalink: blog/:title/
+permalink: blog/:category/:urlname/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -42,7 +42,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -107,4 +107,3 @@ deploy:
   type: git
   repo: https://github.com/lonelyinnovator/lonelyinnovator.github.io.git
   branch: deploy
-  message: update about

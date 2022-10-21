@@ -16,4 +16,3 @@ OO后，性别男，爱好女，xp④sp  =v=
 <div>
     <img src="https://files.xmdhs.com/genshin/svg/41/825541365" alt="genshin card" style="width: 170%">
 </div>
-
