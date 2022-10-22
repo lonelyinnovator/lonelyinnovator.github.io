@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0788M9YKXR"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0788M9YKXR');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <title>
+        Lo Blog
+    </title>
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            为typora更换主题并更改样式
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h2 id="获取主题"><a href="#获取主题" class="headerlink" title="获取主题"></a>获取主题</h2><p>打开typora<a target="_blank" rel="noopener" href="https://theme.typora.io/">获取主题</a>网页，选择<code>Light Monokai</code>主题下载<br>然后将下载得到的css文件复制到typora的主题文件夹中，如下图：</p>
+<div>
+    <img src="https://s1.imagehub.cc/images/2022/10/22/image.png" alt="get-typora-theme.png" border="0" />
+</div>
+
+<h2 id="更改样式"><a href="#更改样式" class="headerlink" title="更改样式"></a>更改样式</h2><p>在typora主题文件夹下创建<code>light-monokai.user.css</code>文件，作为用户自定义的样式，可以覆盖原有的主题的样式。<br>想要个好看点的深色主题，更改如下：</p>
+<h4 id="设置悬浮在可点击的标签上的背景颜色，以及选中文本时的背景颜色"><a href="#设置悬浮在可点击的标签上的背景颜色，以及选中文本时的背景颜色" class="headerlink" title="设置悬浮在可点击的标签上的背景颜色，以及选中文本时的背景颜色"></a>设置悬浮在可点击的标签上的背景颜色，以及选中文本时的背景颜色</h4><p>暗色模式下，悬浮的背景色太亮了，想要改暗一点</p>
+<pre><code class="css">:root&#123;
+    --item-hover-bg-color: #555;
+    --select-text-bg-color: #555;
+&#125;
+</code></pre>
+<img src="https://s1.imagehub.cc/images/2022/10/22/image8861b27ac62cce9f.png" alt="image8861b27ac62cce9f.png" border="0"/>
+
+<br>
+
+<img src="https://s1.imagehub.cc/images/2022/10/22/image54d27121a6887f15.png" alt="image54d27121a6887f15.png" border="0" style="width: 80%" />
+
+<h4 id="设置a标签的字体大小"><a href="#设置a标签的字体大小" class="headerlink" title="设置a标签的字体大小"></a>设置a标签的字体大小</h4><p>light-monokai的a标签字体大小有一定的问题，更改成继承，不设置大小</p>
+<pre><code class="css">a&#123;
+    font-size: inherit;
+&#125;
+</code></pre>
+<h4 id="设置h1和h2标签的下划线"><a href="#设置h1和h2标签的下划线" class="headerlink" title="设置h1和h2标签的下划线"></a>设置h1和h2标签的下划线</h4><p>本来github主题有下划线，看起来不错，改一下border的颜色就有了</p>
+<pre><code class="css">h1,
+h2&#123;
+    border-bottom: 1px solid #333;
+&#125;
+</code></pre>
+<img src="https://s1.imagehub.cc/images/2022/10/22/image565d755b8b035396.png" alt="image565d755b8b035396.png" border="0" style="width: 50%" />
+
+<h4 id="更改代码和代码块的字体"><a href="#更改代码和代码块的字体" class="headerlink" title="更改代码和代码块的字体"></a>更改代码和代码块的字体</h4><p>还是习惯用consolas捏&#x3D;v&#x3D;</p>
+<pre><code class="css">code,
+pre&#123;
+    font-family: consolas;
+&#125;
+</code></pre>
+<h4 id="更改文档内边距"><a href="#更改文档内边距" class="headerlink" title="更改文档内边距"></a>更改文档内边距</h4><p>文档看着感觉太窄了，内边距改小了些</p>
+<pre><code class="css">#write &#123;
+    max-width: 100%;
+    padding: 30px 180px;
+&#125;
+</code></pre>
+<h4 id="减小无序列表和有序列表的缩进"><a href="#减小无序列表和有序列表的缩进" class="headerlink" title="减小无序列表和有序列表的缩进"></a>减小无序列表和有序列表的缩进</h4><pre><code class="css">ul, ol&#123;
+    margin-left: 10px;
+&#125;
+</code></pre>
+<h4 id="更改文本的行间距"><a href="#更改文本的行间距" class="headerlink" title="更改文本的行间距"></a>更改文本的行间距</h4><pre><code class="css">.md-math-block,
+.md-rawblock,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p &#123;
+    margin: 1rem 0;
+&#125;
+</code></pre>
+<h4 id="更改侧边栏的背景颜色"><a href="#更改侧边栏的背景颜色" class="headerlink" title="更改侧边栏的背景颜色"></a>更改侧边栏的背景颜色</h4><pre><code class="css">#ty-sidebar-footer&#123;
+    border-top-color: #282927;
+&#125;
+#ty-sidebar-footer&#123;
+    border-top-color: #282927;
+&#125;
+</code></pre>
+<h4 id="更改公式块的背景颜色"><a href="#更改公式块的背景颜色" class="headerlink" title="更改公式块的背景颜色"></a>更改公式块的背景颜色</h4><p>公式块的背景色是白色的，字也是白的，所以背景要改成黑的，可以用开发者工具查看选择器</p>
+<pre><code class="css">div.md-mathblock-panel.md-rawblock-panel &gt; div.md-rawblock-control.md-rawblock-before,
+div.md-mathblock-panel.md-rawblock-panel &gt; div.md-rawblock-control.md-rawblock-input.md-mathblock-input,
+div.md-mathblock-panel.md-rawblock-panel &gt; div.md-rawblock-control.md-rawblock-after&#123;
+    background-color: #000;
+    font-family: consolas;
+&#125;
+</code></pre>
+<h3 id="更改样式效果"><a href="#更改样式效果" class="headerlink" title="更改样式效果"></a>更改样式效果</h3><img src="https://s1.imagehub.cc/images/2022/10/22/imagee4ab02a27e9152b1.png" alt="imagee4ab02a27e9152b1.png" border="0" />
+
+
+    </div>
+
+    
+</div>
+    <div class="footer" id="footer">
+    <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>-<a class="flink" target="_blank" rel="noopener" href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label>
+        <br>
+        Made by lonelyinnovator.
+<!--         <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script> -->
+    </p>
+</div>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="FqiyUqbg7McKN2eG0MCewupf">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+    color: #698fca;
+}
+
+.v .vlist .vcard .vhead .vsys {
+    color: #3a3e4a;
+}
+
+.v .vlist .vcard .vh .vmeta .vat {
+    color: #638fd5;
+}
+
+.v .vlist .vcard .vhead .vnick {
+    color: #6ba1ff;
+}
+
+.v a {
+    color: #8696b1;
+}
+
+.v .vlist .vcard .vhead .vnick:hover {
+    color: #669bfc;
+}
+</style>
+
+</body>
+
+</html>

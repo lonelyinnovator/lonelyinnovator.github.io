@@ -383,7 +383,7 @@ hr {
   border-style: none;
   border-radius: 5px;
   width: auto;
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
 }
 .post-content code,
@@ -751,7 +751,7 @@ hr {
 }
 .post-content img {
   box-sizing: content-box;
-  max-width: 80%;
+  max-width: 100%;
 }
 .post-content img[align=right] {
   padding-left: 20px;
