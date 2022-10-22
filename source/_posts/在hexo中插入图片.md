@@ -6,28 +6,29 @@ tags:
 urlname: insert-images-to-hexo-blog
 ---
 
-# Markdown方法
+## Markdown方法
 
 [hexo文档链接](https://hexo.io/zh-cn/docs/asset-folders)
 
 没有使用hexo的tag，直接用markdown的语法
 
-## 1.修改typora偏好设置
+### 修改typora偏好设置
 
 在typora的偏好设置中，设置图片插入路径
 
 ![image-20221020135201207.png](https://s1.imagehub.cc/images/2022/10/21/image-20221020135201207.png)
 
-## 2.修改_config.yml
+### 修改_config.yml
 
 在_config.yml文件中设置post_asset_folder: true
 
 <div>
-    <img src="https://s1.imagehub.cc/images/2022/10/21/image-20221020135409525.png" alt="post" style="width: 30%">
+    <img src="https://s1.imagehub.cc/images/2022/10/21/image-20221020135409525.png" alt="post">
 </div>
 
 
-## 3.复制或保存图片
+
+### 复制或保存图片
 
 将图片复制到typora里就可以正常显示在博客上了
 
