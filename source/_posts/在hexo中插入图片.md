@@ -2,7 +2,7 @@
 title: 在hexo中插入图片
 date: 2022-10-20 13:38:19
 categories: hexo
-tags:
+tags: [hexo, image]
 urlname: insert-images-to-hexo-blog
 ---
 

@@ -2,7 +2,7 @@
 title: 为typora更换主题并更改样式
 date: 2022-10-22 10:16:42
 categories: typora
-tags:
+tags: [typora, css]
 urlname: change-typora-theme
 ---
 
@@ -137,3 +137,4 @@ div.md-mathblock-panel.md-rawblock-panel > div.md-rawblock-control.md-rawblock-a
 
 
 
+                
