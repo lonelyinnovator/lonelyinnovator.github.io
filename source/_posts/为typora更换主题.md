@@ -19,14 +19,16 @@ urlname: change-typora-theme
 在typora主题文件夹下创建`light-monokai.user.css`文件，作为用户自定义的样式，可以覆盖原有的主题的样式。
 想要个好看点的深色主题，更改如下：
 
-#### 设置悬浮在可点击的标签上的背景颜色，以及选中文本时的背景颜色
+#### 设置背景颜色
 
 暗色模式下，悬浮的背景色太亮了，想要改暗一点
+设置悬浮在可点击的标签上的背景颜色，选中文本时的背景颜色以及公式块、raw block的背景颜色
 
 ```css
 :root{
     --item-hover-bg-color: #555;
     --select-text-bg-color: #555;
+    --rawblock-edit-panel-bd: #000;
 }
 ```
 
@@ -35,6 +37,10 @@ urlname: change-typora-theme
 <br>
 
 <img src="https://s1.imagehub.cc/images/2022/10/22/image54d27121a6887f15.png" alt="image54d27121a6887f15.png" border="0" style="width: 80%" />
+
+<br>
+
+<img src="https://s1.imagehub.cc/images/2022/10/23/image86b974d1b8471984.png" alt="image86b974d1b8471984.png" border="0" style="width: 40%" />
 
 #### 设置a标签的字体大小
 
@@ -115,20 +121,6 @@ p {
     border-top-color: #282927;
 }
 ```
-
-#### 更改公式块的背景颜色
-
-公式块的背景色是白色的，字也是白的，所以背景要改成黑的，可以用开发者工具查看选择器
-
-```css
-div.md-mathblock-panel.md-rawblock-panel > div.md-rawblock-control.md-rawblock-before,
-div.md-mathblock-panel.md-rawblock-panel > div.md-rawblock-control.md-rawblock-input.md-mathblock-input,
-div.md-mathblock-panel.md-rawblock-panel > div.md-rawblock-control.md-rawblock-after{
-    background-color: #000;
-    font-family: consolas;
-}
-```
-
 
 
 ### 更改样式效果
