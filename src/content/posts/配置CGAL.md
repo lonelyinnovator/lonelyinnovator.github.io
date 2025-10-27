@@ -3,6 +3,7 @@ title: 配置CGAL
 published: 2022-10-28
 category: cgal
 tags: [cgal, cmake]
+slug: cgal-configuration
 ---
 ## 前言
 这里记录一下CGAL的配置过程

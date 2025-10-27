@@ -3,6 +3,7 @@ title: 为typora更换主题并更改样式
 published: 2022-10-22
 category: typora
 tags: [typora, css]
+slug: change-typora-theme
 ---
 
 ## 获取主题

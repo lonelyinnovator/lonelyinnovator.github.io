@@ -3,6 +3,7 @@ title: 解决jupyter lab中暗色主题坐标轴看不清的问题
 published: 2022-10-23
 category: jupyter-lab
 tags: [python, jupyter-lab]
+slug: solve-dark-theme-for-jupyter-lab
 ---
 
 

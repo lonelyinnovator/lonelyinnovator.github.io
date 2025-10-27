@@ -3,6 +3,7 @@ title: 在hexo中插入图片
 published: 2022-10-20
 category: hexo
 tags: [hexo, image]
+slug: insert-images-to-hexo-blog
 ---
 
 ## Markdown方法
